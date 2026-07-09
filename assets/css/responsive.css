@@ -1,0 +1,617 @@
+/* ==========================================
+   CHARZEE RESPONSIVE CSS
+========================================== */
+
+/* Large Devices */
+
+@media (max-width:1200px){
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.section-title h2{
+
+font-size:36px;
+
+}
+
+}
+
+
+/* ==============================
+Tablet
+============================== */
+
+@media (max-width:992px){
+
+.custom-navbar{
+
+padding:12px 0;
+
+background:#111827;
+
+}
+
+.navbar-collapse{
+
+background:#111827;
+
+padding:20px;
+
+border-radius:15px;
+
+margin-top:15px;
+
+}
+
+.nav-link{
+
+margin:12px 0;
+
+}
+
+.hero{
+
+text-align:center;
+
+padding-top:120px;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+margin:auto;
+
+margin-top:20px;
+
+}
+
+.hero .btn{
+
+margin-top:15px;
+
+}
+
+section{
+
+padding:70px 0;
+
+}
+
+.card{
+
+margin-bottom:30px;
+
+}
+
+.section-title{
+
+margin-bottom:40px;
+
+}
+
+}
+
+
+/* ==============================
+Mobile
+============================== */
+
+@media (max-width:768px){
+
+.hero{
+
+min-height:90vh;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+line-height:1.3;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.hero-tag{
+
+font-size:13px;
+
+padding:8px 15px;
+
+}
+
+.btn-primary,
+
+.btn-outline-light{
+
+width:100%;
+
+margin-bottom:15px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+}
+
+.card-body{
+
+padding:20px;
+
+}
+
+footer{
+
+text-align:center;
+
+}
+
+footer .row>div{
+
+margin-bottom:30px;
+
+}
+
+}
+
+
+/* ==============================
+Small Mobile
+============================== */
+
+@media (max-width:576px){
+
+.navbar-brand img{
+
+height:45px;
+
+}
+
+.hero{
+
+padding-top:100px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+.card img{
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+}
+
+
+/* ==============================
+Extra Small
+============================== */
+
+@media (max-width:400px){
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+.hero p{
+
+font-size:14px;
+
+}
+
+.btn{
+
+font-size:14px;
+
+padding:12px 18px;
+
+}
+
+.section-title h2{
+
+font-size:24px;
+
+}
+
+}
+
+/* ===========================================
+   Large Laptop (1400px)
+=========================================== */
+
+@media (max-width:1400px){
+
+.hero-title{
+    font-size:60px;
+}
+
+.section-title{
+    font-size:42px;
+}
+
+}
+
+
+/* ===========================================
+   Laptop
+=========================================== */
+
+@media (max-width:1200px){
+
+.hero-title{
+    font-size:52px;
+}
+
+.hero-description{
+    width:70%;
+}
+
+.nav-menu{
+    gap:20px;
+}
+
+.section-title{
+    font-size:38px;
+}
+
+}
+
+
+/* ===========================================
+   Tablet Landscape
+=========================================== */
+
+@media (max-width:992px){
+
+.header{
+    padding:18px 0;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:320px;
+    height:100vh;
+    background:#ffffff;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    padding:90px 30px;
+    transition:.4s;
+    box-shadow:-5px 0 25px rgba(0,0,0,.15);
+}
+
+.navbar.active{
+    right:0;
+}
+
+.nav-menu{
+    flex-direction:column;
+    width:100%;
+    gap:25px;
+}
+
+.nav-btn{
+    margin-top:30px;
+}
+
+.hero{
+    height:90vh;
+}
+
+.hero-content{
+    text-align:center;
+}
+
+.hero-title{
+    font-size:48px;
+}
+
+.hero-description{
+    width:100%;
+    margin:auto;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.section-title{
+    font-size:36px;
+}
+
+.container{
+    width:92%;
+}
+
+}
+
+
+/* ===========================================
+   Tablet Portrait
+=========================================== */
+
+@media (max-width:768px){
+
+.header{
+    padding:15px 0;
+}
+
+.logo img{
+    height:45px;
+}
+
+.hero{
+    height:85vh;
+}
+
+.hero-title{
+    font-size:40px;
+    line-height:1.2;
+}
+
+.hero-description{
+    font-size:17px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:220px;
+    text-align:center;
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:32px;
+}
+
+.section-subtitle{
+    font-size:16px;
+}
+
+.footer-top{
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+}
+
+
+/* ===========================================
+   Mobile
+=========================================== */
+
+@media (max-width:576px){
+
+.container{
+    width:92%;
+}
+
+.hero{
+    height:100vh;
+    padding-top:100px;
+}
+
+.hero-title{
+    font-size:34px;
+}
+
+.hero-description{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:100%;
+}
+
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.footer-top{
+    grid-template-columns:1fr;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+}
+
+
+/* ===========================================
+   Small Mobile
+=========================================== */
+
+@media (max-width:400px){
+
+.hero-title{
+    font-size:28px;
+}
+
+.hero-description{
+    font-size:15px;
+}
+
+.logo img{
+    height:40px;
+}
+
+.menu-toggle{
+    font-size:28px;
+}
+
+.section-title{
+    font-size:24px;
+}
+
+}
+@media(max-width:992px){
+
+.hero-title{
+    font-size:50px;
+}
+
+.hero-stats{
+    gap:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+}
+
+.hero-title{
+    font-size:40px;
+}
+
+.hero-description{
+    font-size:16px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero-stats{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-title{
+    font-size:32px;
+}
+
+.hero-description{
+    font-size:15px;
+}
+
+.stat-box h2{
+    font-size:28px;
+}
+
+/* About Section */
+
+@media (max-width:991px){
+
+.about-content{
+    margin-top:50px;
+    padding-left:0;
+}
+
+.about-floating-card{
+    right:20px;
+    bottom:20px;
+    padding:20px;
+}
+
+.about-feature-card{
+    padding:20px;
+}
+
+.about-counter h2{
+    font-size:36px;
+}
+
+}
+
+@media (max-width:767px){
+
+.about-floating-card{
+    position:relative;
+    right:0;
+    bottom:0;
+    margin-top:20px;
+}
+
+.about-feature-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-feature-card .icon{
+    margin:auto;
+}
+
+.about-counter{
+    margin-bottom:20px;
+}
+
+}
+
+}
