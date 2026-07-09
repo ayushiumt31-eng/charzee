@@ -673,6 +673,28 @@ DOWNLOAD SECTION
 
 }
 
+.download-card-solar{
+
+    display:wrap;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
 .download-card:hover{
 
     transform:translateY(-8px);

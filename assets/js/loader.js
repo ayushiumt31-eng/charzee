@@ -20,7 +20,7 @@ function loadComponents() {
 
         projects: "components/projects.html",
 
-        whyChoose: "components/whychoose.html",
+        whyChoose: "components/why-choose.html",
 
         cta: "components/cta.html",
 
