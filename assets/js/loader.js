@@ -14,7 +14,6 @@ function loadComponents() {
 
         about: "components/abouts.html",
 
-        // products: "components/products.html",
 
         services: "components/services.html",
 
@@ -25,6 +24,8 @@ function loadComponents() {
         cta: "components/cta.html",
 
         footer: "components/footer.html",
+
+        contact: "components/contact.html",
 
         products: "components/home/products.html",
 

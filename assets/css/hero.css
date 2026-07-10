@@ -609,6 +609,70 @@
 
 }
 
+/* ==========================================
+   INNER PAGE HERO (products, about, services)
+========================================== */
+
+.hero-inner{
+
+    min-height:420px;
+
+    padding:160px 0 80px;
+
+    background:linear-gradient(135deg,#0d1b2e 0%,#0d3b6e 100%);
+
+    color:#fff;
+
+    text-align:center;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-inner .hero-title{
+
+    font-size:52px;
+
+}
+
+.hero-inner .hero-description{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+    color:#cce4ff;
+
+}
+
+@media(max-width:768px){
+
+.hero-inner{
+
+    padding:130px 0 60px;
+
+    min-height:auto;
+
+}
+
+.hero-inner .hero-title{
+
+    font-size:36px;
+
+}
+
+.hero-inner .hero-description{
+
+    font-size:16px;
+
+}
+
+}
+
 /*==========================================
 PRODUCT HERO
 ==========================================*/
