@@ -48,12 +48,27 @@ function loadComponents() {
                 }
                 return response.text();
             })
+            // .then(html => {
+            //     element.innerHTML = html;
+
+            //     if (id === "header") {
+            //         navbarScroll();
+            //         setActiveNavLink();
+            //     }
+
+            //     removeCurrentPageLinks(element, id);
+            // })
             .then(html => {
                 element.innerHTML = html;
 
                 if (id === "header") {
                     navbarScroll();
                     setActiveNavLink();
+                }
+
+                // Contact form initialize
+                if (id === "contact" && typeof initContactForm === "function") {
+                    initContactForm();
                 }
 
                 removeCurrentPageLinks(element, id);

@@ -10,11 +10,11 @@
 
         <div class="section-heading text-center mb-5">
 
-            <span class="section-badge">
+            <!-- <span class="section-badge">
 
                 Get In Touch
 
-            </span>
+            </span> -->
 
             <h2 class="section-title">
 
@@ -52,9 +52,7 @@
 
                                     <label class="form-label">Full Name</label>
 
-                                    <input type="text"
-                                        class="form-control"
-                                        placeholder="Your Full Name"
+                                    <input type="text" name="name" class="form-control" placeholder="Your Full Name"
                                         required>
 
                                 </div>
@@ -67,9 +65,7 @@
 
                                     <label class="form-label">Phone Number</label>
 
-                                    <input type="tel"
-                                        class="form-control"
-                                        placeholder="+91 XXXXX XXXXX"
+                                    <input type="tel" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX"
                                         required>
 
                                 </div>
@@ -82,9 +78,7 @@
 
                                     <label class="form-label">Email Address</label>
 
-                                    <input type="email"
-                                        class="form-control"
-                                        placeholder="you@example.com"
+                                    <input type="email" name="email" class="form-control" placeholder="you@example.com"
                                         required>
 
                                 </div>
@@ -97,7 +91,7 @@
 
                                     <label class="form-label">Subject</label>
 
-                                    <select class="form-control">
+                                    <select name="subject" class="form-control">
 
                                         <option value="">Select Subject</option>
                                         <option>AC EV Charger Enquiry</option>
@@ -119,8 +113,7 @@
 
                                     <label class="form-label">Message</label>
 
-                                    <textarea class="form-control"
-                                        rows="5"
+                                    <textarea class="form-control" name="message" rows="5"
                                         placeholder="Tell us about your EV charging project or requirement..."
                                         required></textarea>
 
@@ -148,87 +141,46 @@
 
             </div>
 
+
             <!-- Right — Contact Info -->
 
             <div class="col-lg-5" data-aos="fade-left">
 
-                <!-- Info Cards -->
-
-                <div class="contact-info-card mb-4">
-
-                    <div class="contact-info-icon">
-
-                        <i class="bi bi-geo-alt-fill"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h5>Our Office</h5>
-
-                        <p>Delhi, India</p>
-
-                    </div>
-
+                <div class="contact-info-card mb-3">
+                    <i class="bi bi-geo-alt-fill contact-info-icon"></i>
+                    <p>
+                        <strong>Our Office -</strong>
+                        Delhi, India
+                    </p>
                 </div>
 
-                <div class="contact-info-card mb-4">
-
-                    <div class="contact-info-icon">
-
-                        <i class="bi bi-telephone-fill"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h5>Phone</h5>
-
+                <div class="contact-info-card mb-3">
+                    <i class="bi bi-telephone-fill contact-info-icon"></i>
+                    <p>
+                        <strong>Phone -</strong>
                         <a href="tel:+919876543210">+91 98765 43210</a>
+                    </p>
+                </div>
 
-                    </div>
-
+                <div class="contact-info-card mb-3">
+                    <i class="bi bi-envelope-fill contact-info-icon"></i>
+                    <p>
+                        <strong>Email -</strong>
+                        <a href="mailto:info@charzee.com">info@charzee.com</a>
+                    </p>
                 </div>
 
                 <div class="contact-info-card mb-4">
-
-                    <div class="contact-info-icon">
-
-                        <i class="bi bi-envelope-fill"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h5>Email</h5>
-
-                        <a href="mailto:info@charzee.com">info@charzee.com</a>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-info-card mb-5">
-
-                    <div class="contact-info-icon">
-
-                        <i class="bi bi-clock-fill"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h5>Working Hours</h5>
-
-                        <p>Mon – Sat : 9:00 AM – 6:30 PM</p>
-
-                    </div>
-
+                    <i class="bi bi-clock-fill contact-info-icon"></i>
+                    <p>
+                        <strong>Working Hours -</strong>
+                        Mon – Sat : 9:00 AM – 6:30 PM
+                    </p>
                 </div>
 
                 <!-- Social Links -->
 
-                <div class="contact-social">
+                <div class="contact-social mt-4">
 
                     <h5 class="mb-3">Follow Us</h5>
 
@@ -264,12 +216,8 @@
 
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1710000000000"
-                        width="100%"
-                        height="220"
-                        style="border:0;border-radius:16px;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        width="100%" height="220" style="border:0;border-radius:16px;" allowfullscreen=""
+                        loading="lazy">
                     </iframe>
 
                 </div>

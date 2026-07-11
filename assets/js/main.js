@@ -2,7 +2,6 @@
    CHARZEE EV SOLUTIONS
    MAIN.JS
 ========================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     // Load Components

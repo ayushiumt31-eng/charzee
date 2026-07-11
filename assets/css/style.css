@@ -30,9 +30,12 @@
 /* Animations */
 @import url("animations.css");
 
-/* Responsive (Always Last) */
-@import url("responsive.css");
-
 @import url("product.css");
 
 @import url("product-details.css");
+
+@import url("contact.css");
+
+/* Responsive (Always Last) */
+@import url("responsive.css");
+

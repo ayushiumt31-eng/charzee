@@ -9,7 +9,7 @@
 
 .section{
     position:relative;
-    padding:100px 0;
+    padding:16px 0;
 }
 
 .section-light{
@@ -125,8 +125,10 @@
     font-size:44px;
     font-weight:700;
     margin-bottom:25px;
-    color:var(--dark);
+    color:#06bfbf;
 }
+            
+            
 
 .about-content p{
     color:var(--gray);
@@ -1258,7 +1260,7 @@ BUTTONS
 .section-heading .section-title {
     font-size: 42px;
     font-weight: 700;
-    color: var(--dark);
+    color:#06bfbf;
     margin-bottom: 18px;
     line-height: 1.25;
 }
@@ -1515,4 +1517,15 @@ BUTTONS
     color: var(--gray);
     font-size: 14px;
     font-weight: 500;
+}
+
+.heading-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #e8f9f6;
+    color: var(--primary);
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.25;
 }
