@@ -62,13 +62,17 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:25px;
+    min-height:125px;
+    padding:16px;
     opacity:.70;
     transition:var(--transition);
 }
 
 .brand-logo img{
-    max-height:60px;
+    width:100%;
+    max-width:155px;
+    height:86px;
+    object-fit:contain;
     filter:grayscale(100%);
     transition:.4s;
 }
@@ -80,6 +84,18 @@
 .brand-logo:hover img{
     filter:grayscale(0%);
     transform:scale(1.08);
+}
+
+@media (max-width: 767px){
+    .brand-logo{
+        min-height:105px;
+        padding:12px;
+    }
+
+    .brand-logo img{
+        max-width:130px;
+        height:72px;
+    }
 }
 
 
@@ -456,6 +472,125 @@
 
 .client span{
     color:var(--gray);
+}
+
+.testimonial-page{
+    background:var(--light);
+}
+
+.testimonial-page .testimonial-card{
+    border:1px solid rgba(6,191,191,.12);
+    transition:var(--transition);
+}
+
+.testimonial-page .testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-lg);
+}
+
+.testimonial-rating{
+    display:flex;
+    gap:5px;
+    margin-bottom:18px;
+    color:#fbbf24;
+}
+
+.client-avatar{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    background:var(--gradient-primary);
+    color:#fff;
+    font-weight:700;
+}
+
+
+/* ==========================================
+   PORTFOLIO
+========================================== */
+
+.portfolio{
+    background:var(--light);
+}
+
+.portfolio-filter{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:35px;
+}
+
+.portfolio-filter span{
+    display:inline-flex;
+    align-items:center;
+    min-height:40px;
+    padding:8px 18px;
+    border-radius:50px;
+    background:#fff;
+    color:var(--dark);
+    font-size:14px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(17,24,39,.06);
+}
+
+.portfolio-card{
+    height:100%;
+    overflow:hidden;
+    border-radius:22px;
+    background:#fff;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow-lg);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:.45s;
+}
+
+.portfolio-card:hover img{
+    transform:scale(1.06);
+}
+
+.portfolio-content{
+    padding:26px;
+}
+
+.portfolio-content span{
+    display:inline-block;
+    padding:5px 14px;
+    margin-bottom:14px;
+    border-radius:30px;
+    background:#e8f9f6;
+    color:var(--primary);
+    font-size:13px;
+    font-weight:700;
+}
+
+.portfolio-content h3{
+    color:var(--dark);
+    font-size:21px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.portfolio-content p{
+    color:var(--gray);
+    line-height:1.75;
+    margin:0;
+    font-size:15px;
 }
 
 
@@ -1128,6 +1263,15 @@ BUTTONS
     line-height: 1.25;
 }
 
+/* Uses the Trusted By badge treatment without changing the heading typography. */
+.trusted .section-heading .trusted-title-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #e8f9f6;
+    color: var(--primary);
+}
+
 .section-heading .section-subtitle {
     max-width: 680px;
     color: var(--gray);
@@ -1314,6 +1458,34 @@ BUTTONS
     margin: 0;
     font-size: 15px;
 }
+
+/* ==========================================
+   BLOG ARTICLE
+========================================== */
+
+.blog-article { background: var(--light); }
+.blog-content { background: #fff; border-radius: 24px; padding: 52px; box-shadow: var(--shadow); }
+.blog-content h2 { color: var(--dark); font-size: 30px; font-weight: 700; line-height: 1.35; margin: 42px 0 18px; }
+.blog-content h3 { color: var(--dark); font-size: 23px; font-weight: 700; margin: 30px 0 14px; }
+.blog-content p { color: var(--text); font-size: 16px; line-height: 1.9; margin-bottom: 18px; }
+.blog-lead { font-size: 18px !important; color: var(--gray-dark) !important; }
+.blog-highlight { background: linear-gradient(135deg, #e8f9f6, #edf9ff); border-left: 4px solid var(--primary); border-radius: 0 16px 16px 0; padding: 24px; margin: 28px 0; }
+.blog-highlight p { margin: 0; }
+.blog-list { padding-left: 0; list-style: none; margin: 20px 0 28px; }
+.blog-list li { position: relative; padding: 8px 0 8px 28px; color: var(--text); line-height: 1.75; }
+.blog-list li::before { content: '\F26A'; font-family: 'bootstrap-icons'; color: var(--primary); left: 0; position: absolute; }
+.blog-table-wrap { overflow-x: auto; margin: 26px 0 32px; }
+.blog-table { min-width: 620px; width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border-radius: 16px; border: 1px solid var(--gray-light); }
+.blog-table th { background: var(--gradient-primary); color: #fff; padding: 15px 18px; font-weight: 600; }
+.blog-table td { padding: 15px 18px; color: var(--text); border-top: 1px solid var(--gray-light); }
+.blog-table tr:nth-child(even) td { background: #f8fcfc; }
+.blog-cta { background: var(--gradient-dark); border-radius: 20px; padding: 32px; margin-top: 42px; color: #fff; }
+.blog-cta h3, .blog-cta p { color: #fff; }
+.blog-cta p { opacity: .88; }
+.blog-faq .accordion-item { box-shadow: none; border: 1px solid var(--gray-light); }
+.blog-faq .accordion-button { padding: 20px 22px; }
+.blog-faq .accordion-body { color: var(--text); line-height: 1.8; }
+@media (max-width: 767px) { .blog-content { padding: 30px 22px; } .blog-content h2 { font-size: 25px; margin-top: 32px; } .blog-content h3 { font-size: 20px; } .blog-content p { font-size: 15px; } }
 
 /* Experience Card (floating on image) */
 

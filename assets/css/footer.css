@@ -376,6 +376,100 @@
 }
 
 /* ==========================================
+   SOCIAL SIDE TOGGLE
+========================================== */
+
+.social-toggle{
+
+    position: fixed;
+    right: 0;
+    top: 58%;
+    transform: translateY(-50%);
+    z-index: 1000;
+
+}
+
+.social-toggle-link{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 12px 26px rgba(17,24,39,.18);
+    transition: var(--transition);
+
+}
+
+.social-toggle-link:hover{
+
+    color: #fff;
+    transform: translateX(-6px) scale(1.04);
+
+}
+
+.social-toggle-menu{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.86);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 18px 42px rgba(17,24,39,.14);
+
+}
+
+.social-toggle-link{
+
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.social-toggle-link.whatsapp{
+
+    background: #25D366;
+
+}
+
+.social-toggle-link.facebook{
+
+    background: #1877F2;
+
+}
+
+.social-toggle-link.instagram{
+
+    background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+
+}
+
+@media (max-width: 767px){
+
+    .social-toggle{
+
+        right: 0;
+        top: auto;
+        bottom: 92px;
+        transform: none;
+
+    }
+
+    .social-toggle-link{
+
+        width: 46px;
+        height: 46px;
+
+    }
+
+}
+
+/* ==========================================
    FOOTER SHAPE
 ========================================== */
 

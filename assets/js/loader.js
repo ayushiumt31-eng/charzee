@@ -19,6 +19,10 @@ function loadComponents() {
 
         projects: "components/projects.html",
 
+        portfolio: "components/portfolio.html",
+
+        testimonials: "components/testimonials.html",
+
         whyChoose: "components/why-choose.html",
 
         cta: "components/cta.html",
@@ -46,8 +50,39 @@ function loadComponents() {
             })
             .then(html => {
                 element.innerHTML = html;
+
+                if (id === "header") {
+                    navbarScroll();
+                    setActiveNavLink();
+                }
+
+                removeCurrentPageLinks(element, id);
             })
             .catch(error => console.error(error));
+
+    });
+
+}
+
+function removeCurrentPageLinks(container, componentId) {
+
+    if (componentId === "header" || componentId === "footer") return;
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const links = container.querySelectorAll("a[href]");
+
+    links.forEach(link => {
+
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (linkPage !== currentPage) return;
+
+        const centeredWrapper = link.closest(".text-center");
+        link.remove();
+
+        if (centeredWrapper && centeredWrapper.children.length === 0) {
+            centeredWrapper.remove();
+        }
 
     });
 

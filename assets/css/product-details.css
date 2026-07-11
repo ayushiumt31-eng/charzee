@@ -1035,7 +1035,7 @@ FINAL CTA
 
 .cta-wrapper{
 
-    background:linear-gradient(135deg,#0d6efd,#3d8bfd);
+    
 
     border-radius:30px;
 
@@ -1047,7 +1047,7 @@ FINAL CTA
 
     overflow:hidden;
 
-    box-shadow:0 30px 70px rgba(13,110,253,.25);
+    
 
 }
 
@@ -1447,4 +1447,41 @@ font-size:24px;
 }
 
 
+}
+
+/* Shared navigation for product detail pages */
+.product-page-back{
+    position:fixed;
+    top:22px;
+    right:28px;
+    left:auto;
+    z-index:1050;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    background:#fff;
+    border:1px solid rgba(6,191,191,.22);
+    color:var(--dark);
+    font-weight:600;
+    border-radius:50px;
+    box-shadow:0 10px 24px rgba(17,24,39,.12);
+    transition:var(--transition);
+}
+
+.product-page-back:hover{
+    color:#fff;
+    background:var(--primary);
+    border-color:var(--primary);
+    transform:translateY(-2px);
+}
+
+@media (max-width:576px){
+    .product-page-back{
+        top:14px;
+        right:14px;
+        left:auto;
+        padding:9px 14px;
+        font-size:14px;
+    }
 }
