@@ -1,617 +1,550 @@
 /* ==========================================
-   CHARZEE RESPONSIVE CSS
+   CHARZEE EV SOLUTIONS
+   RESPONSIVE.CSS  — Complete Rewrite
+   Mobile-first media queries, no nesting
 ========================================== */
 
-/* Large Devices */
 
-@media (max-width:1200px){
+/* ==========================================
+   1. LARGE LAPTOP  ≤ 1400px
+========================================== */
+
+@media (max-width: 1400px) {
+  .hero-title        { font-size: 60px; }
+  .product-title     { font-size: 52px; }
+}
+
+
+/* ==========================================
+   2. LAPTOP  ≤ 1200px
+========================================== */
+
+@media (max-width: 1200px) {
+  .hero-title         { font-size: 52px; }
+  .hero-description   { max-width: 80%; }
+  .product-title      { font-size: 48px; }
+  .section-title h2   { font-size: 38px; }
+  .section-heading .section-title { font-size: 38px; }
+}
+
+
+/* ==========================================
+   3. TABLET LANDSCAPE  ≤ 992px
+========================================== */
+
+@media (max-width: 992px) {
+
+  /* --- Header / Navbar --- */
+  .custom-navbar        { padding: 12px 0; }
+  .navbar-toggler-icon  { filter: none; }   /* always visible on light bg */
+  .navbar-collapse {
+    background : #111827;
+    border-radius : 18px;
+    margin-top : 15px;
+    padding : 20px;
+  }
+  .nav-link             { color: #fff !important; padding: 12px 0 !important; }
+  .nav-link::after      { display: none; }
+  .dropdown-menu {
+    background    : #1F2937;
+    border-radius : 12px;
+    box-shadow    : none;
+    margin-top    : 8px;
+  }
+  .dropdown-item        { color: #fff; }
+  .dropdown-item:hover  { background: rgba(255,255,255,.08); }
+  .mega-menu            { padding: 12px; }
+  .mega-menu img        { display: none; }
+  .mega-menu a          { color: rgba(255,255,255,.8); padding: 8px 0; }
+  .mega-menu h6         { color: #fff; }
+
+  /* Force mega menu columns to full-width on mobile */
+  .mega-menu .col-lg-3  { flex: 0 0 100%; max-width: 100%; }
+
+  /* --- Hero --- */
+  .hero {
+    text-align   : center;
+    padding-top  : 120px;
+    min-height   : auto;
+  }
+  .hero-content         { margin: auto; }
+  .hero-title           { font-size: 48px; }
+  .hero-description     { max-width: 100%; margin: auto auto 30px; }
+  .hero-buttons         { justify-content: center; }
+  .hero-stats           { justify-content: center; flex-wrap: wrap; gap: 30px; }
+  .hero-image           { margin-top: 50px; }
+
+  /* --- Inner Hero --- */
+  .hero-inner           { padding: 130px 0 60px; }
+  .hero-inner .hero-title { font-size: 40px; }
+
+  /* --- About Section --- */
+  .about-content        { margin-top: 40px; padding-left: 0 !important; }
+  .about-floating-card  { right: 10px; bottom: 10px; padding: 18px 22px; }
+  .about-counter h2     { font-size: 38px; }
+
+  /* --- Products --- */
+  .product-title        { font-size: 42px; }
+  .product-image-wrapper { margin-top: 50px; }
+  .right-card           { display: none; }
+
+  /* --- Sections --- */
+  section, .section     { padding: 70px 0; }
+  .section-title h2     { font-size: 36px; }
+  .section-heading .section-title { font-size: 36px; }
+  .container            { width: 94%; }
+
+  /* --- CTA --- */
+  .cta-wrapper          { padding: 45px 30px; text-align: center; }
+  .cta-features         { justify-content: center; }
+  .cta-card             { margin-top: 30px; }
+
+  /* --- DC Why section --- */
+  .dc-why-card          { padding: 35px 25px; }
+
+  /* --- Stats --- */
+  .hero-stats           { gap: 20px; margin-top: 40px; }
+}
 
-.hero h1{
 
-font-size:52px;
-
-}
-
-.section-title h2{
-
-font-size:36px;
-
-}
-
-}
-
-
-/* ==============================
-Tablet
-============================== */
-
-@media (max-width:992px){
-
-.custom-navbar{
-
-padding:12px 0;
-
-background:#111827;
-
-}
-
-.navbar-collapse{
-
-background:#111827;
-
-padding:20px;
-
-border-radius:15px;
-
-margin-top:15px;
-
-}
-
-.nav-link{
-
-margin:12px 0;
-
-}
-
-.hero{
-
-text-align:center;
-
-padding-top:120px;
-
-}
-
-.hero h1{
-
-font-size:46px;
-
-}
-
-.hero p{
-
-margin:auto;
-
-margin-top:20px;
-
-}
-
-.hero .btn{
-
-margin-top:15px;
-
-}
-
-section{
-
-padding:70px 0;
-
-}
-
-.card{
-
-margin-bottom:30px;
-
-}
-
-.section-title{
-
-margin-bottom:40px;
-
-}
-
-}
-
-
-/* ==============================
-Mobile
-============================== */
-
-@media (max-width:768px){
-
-.hero{
-
-min-height:90vh;
-
-}
-
-.hero h1{
-
-font-size:36px;
-
-line-height:1.3;
-
-}
-
-.hero p{
-
-font-size:16px;
-
-}
-
-.hero-tag{
-
-font-size:13px;
-
-padding:8px 15px;
-
-}
-
-.btn-primary,
-
-.btn-outline-light{
-
-width:100%;
-
-margin-bottom:15px;
-
-}
-
-.section-title h2{
-
-font-size:30px;
-
-}
-
-.section-title p{
-
-font-size:15px;
-
-}
-
-.card-body{
-
-padding:20px;
-
-}
-
-footer{
-
-text-align:center;
-
-}
-
-footer .row>div{
-
-margin-bottom:30px;
-
-}
-
-}
-
-
-/* ==============================
-Small Mobile
-============================== */
-
-@media (max-width:576px){
-
-.navbar-brand img{
-
-height:45px;
-
-}
-
-.hero{
-
-padding-top:100px;
-
-}
-
-.hero h1{
-
-font-size:30px;
-
-}
-
-.hero p{
-
-font-size:15px;
-
-}
-
-section{
-
-padding:60px 0;
-
-}
-
-.card img{
-
-height:220px;
-
-object-fit:cover;
-
-}
-
-}
-
-
-/* ==============================
-Extra Small
-============================== */
-
-@media (max-width:400px){
-
-.hero h1{
-
-font-size:26px;
-
+/* ==========================================
+   4. TABLET PORTRAIT  ≤ 768px
+========================================== */
+
+@media (max-width: 768px) {
+
+  /* --- Header --- */
+  .header               { padding: 14px 0; }
+  .header-space         { height: 75px; }
+  .navbar-brand img     { height: 46px; }
+
+  /* --- Hero --- */
+  .hero                 { text-align: center; min-height: 90vh; }
+  .hero-title           { font-size: 38px; line-height: 1.25; }
+  .hero-description     { font-size: 16px; line-height: 1.8; }
+  .hero-buttons         { flex-direction: column; align-items: center; gap: 14px; }
+  .hero-buttons .btn    { width: 100%; max-width: 340px; }
+  .hero-stats           { margin-top: 40px; gap: 20px; }
+  .stat-box h2          { font-size: 32px; }
+  .hero-tag             { font-size: 13px; padding: 8px 16px; }
+
+  /* --- Inner Hero --- */
+  .hero-inner           { padding: 110px 0 50px; min-height: auto; }
+  .hero-inner .hero-title      { font-size: 32px; }
+  .hero-inner .hero-description { font-size: 15px; }
+
+  /* --- Product Hero --- */
+  .product-hero         { padding: 110px 0 70px; }
+  .product-title        { font-size: 34px; }
+  .hero-stats           { flex-direction: column; }
+  .top-card, .bottom-card { display: none; }
+
+  /* --- About --- */
+  .about-content        { padding-left: 0 !important; }
+  .about-floating-card {
+    position   : relative !important;
+    right      : auto !important;
+    bottom     : auto !important;
+    margin-top : 20px;
+    padding    : 18px 22px;
+    text-align : center;
+  }
+  .about-feature-card   { flex-direction: column; text-align: center; }
+  .about-feature-card .icon { margin: 0 auto 15px; }
+  .about-counter        { margin-bottom: 18px; }
+  .about-counter h2     { font-size: 34px; }
+  .about-content h2     { font-size: 32px; }
+
+  /* --- Sections --- */
+  section, .section     { padding: 60px 0; }
+  .section-title h2     { font-size: 30px; }
+  .section-heading .section-title { font-size: 30px; }
+  .section-title p,
+  .section-heading .section-subtitle { font-size: 15px; }
+
+  /* --- Service cards --- */
+  .service-card         { padding: 35px 25px; }
+
+  /* --- Why Choose (home) --- */
+  .why-image img        { width: 100%; }
+  .experience-card {
+    position  : relative !important;
+    left      : auto !important;
+    bottom    : auto !important;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* --- Products grid --- */
+  .product-image img    { height: 220px; }
+
+  /* --- DC Why --- */
+  .dc-why-section       { padding: 60px 0; }
+  .dc-why-card          { padding: 28px 20px; }
+  .dc-why-icon          { width: 68px; height: 68px; font-size: 26px; }
+  .dc-why-card h4       { font-size: 22px; }
+
+  /* --- Downloads --- */
+  .download-card        { padding: 28px 22px; }
+  .download-card h3     { font-size: 22px; }
+  .download-icon        { width: 68px; height: 68px; font-size: 28px; }
+  .download-card .btn   { padding: 14px 30px; width: 100%; }
+
+  /* --- Spec table --- */
+  .spec-table-wrapper   { overflow-x: auto; }
+  .spec-table th,
+  .spec-table td        { padding: 16px 18px; }
+
+  /* --- CTA --- */
+  .cta-wrapper          { padding: 40px 22px; text-align: center; }
+  .cta-title            { font-size: 26px; }
+  .cta-wrapper h2, .cta-box h2 { font-size: 28px; }
+  .cta-box              { padding: 45px 25px; }
+  .dc-cta-wrapper       { padding: 50px 22px; }
+  .dc-cta-wrapper h2    { font-size: 30px; }
+  .dc-cta-buttons       { flex-direction: column; }
+  .dc-cta-buttons .btn  { width: 100%; }
+  .dc-final-cta         { padding: 60px 0; }
+  .product-cta          { padding: 60px 0; }
+
+  /* --- Contact --- */
+  .contact-map iframe   { height: 200px; }
+
+  /* --- Footer --- */
+  .footer               { padding: 60px 0 20px; text-align: center; }
+  .footer-social        { justify-content: center; }
+  .footer-title::after  { left: 50%; transform: translateX(-50%); }
+  .footer-links a:hover { padding-left: 0; }
+  .footer-contact li    { justify-content: center; text-align: left; }
+  .footer-bottom-content { flex-direction: column; text-align: center; gap: 12px; }
+  .footer-form          { flex-direction: column; gap: 12px; }
+  .footer-form input    { border-radius: 50px; width: 100%; }
+  .footer-form button   { width: 100%; border-radius: 50px; height: 50px; }
+  .footer-bottom        { margin-top: 40px; }
+  .footer-bottom .col-lg-6 { text-align: center !important; }
+
+  /* --- Blog --- */
+  .blog-content         { padding: 28px 18px; }
+  .blog-content h2      { font-size: 23px; }
+  .blog-content h3      { font-size: 20px; }
+
+  /* --- Portfolio filter --- */
+  .portfolio-filter     { gap: 8px; }
+  .portfolio-filter span { font-size: 13px; padding: 7px 14px; }
+
+  /* --- Buttons global --- */
+  .btn-primary,
+  .btn-outline-primary  { width: 100%; margin-bottom: 12px; }
+
+  /* --- Stats section --- */
+  .stat-box h2          { font-size: 44px; }
+
+  /* --- Social toggle & back-to-top spacing --- */
+  .back-to-top          { right: 18px; bottom: 18px; width: 48px; height: 48px; }
+  .social-toggle        { bottom: 76px; }
+}
+
+
+/* ==========================================
+   5. MOBILE  ≤ 576px
+========================================== */
+
+@media (max-width: 576px) {
+
+  /* --- Header --- */
+  .navbar-brand img     { height: 42px; }
+  .header-space         { height: 70px; }
+
+  /* --- Hero --- */
+  .hero                 { min-height: 95vh; padding-top: 90px; }
+  .hero-title           { font-size: 30px; line-height: 1.3; }
+  .hero-tag             { font-size: 12px; }
+  .hero-description     { font-size: 14px; }
+  .hero-buttons .btn    { max-width: 100%; }
+  .stat-box h2          { font-size: 28px; }
+
+  /* --- Inner Hero --- */
+  .hero-inner           { padding: 100px 0 45px; }
+  .hero-inner .hero-title { font-size: 27px; }
+
+  /* --- Product Hero --- */
+  .product-title        { font-size: 28px; }
+  .product-description  { font-size: 15px; }
+  .product-badge        { font-size: 13px; padding: 9px 18px; }
+
+  /* --- Sections --- */
+  section, .section     { padding: 55px 0; }
+  .section-title h2     { font-size: 26px; }
+  .section-heading .section-title { font-size: 26px; }
+
+  /* --- About --- */
+  .about-content h2     { font-size: 26px; }
+
+  /* --- Cards --- */
+  .card-body            { padding: 18px; }
+  .card img             { height: 200px; object-fit: cover; }
+
+  /* --- Product details --- */
+  .product-details h1   { font-size: 26px; }
+  .feature-box          { padding: 18px; }
+  .product-feature-card { padding: 22px 18px; }
+  .product-feature-card i { font-size: 40px; }
+
+  /* --- Spec table --- */
+  .spec-table th        { padding: 14px 14px; font-size: 13px; }
+  .spec-table td        { padding: 14px 14px; font-size: 13px; }
+
+  /* --- DC Why --- */
+  .dc-why-card h4       { font-size: 20px; }
+  .dc-why-card p        { font-size: 14px; }
+
+  /* --- CTA --- */
+  .cta-wrapper h2, .cta-box h2 { font-size: 24px; }
+  .product-cta .btn     { width: 100%; }
+  .dc-cta-wrapper h2    { font-size: 26px; }
+
+  /* --- Footer --- */
+  .footer               { padding: 50px 0 18px; }
+  .footer-logo img      { max-height: 52px; }
+
+  /* --- Download button overflow fix --- */
+  .download-card .btn   { padding: 14px 20px !important; }
+
+  /* --- Back to top --- */
+  .product-page-back    { top: 12px; right: 12px; padding: 8px 12px; font-size: 13px; }
+
+  /* --- Buttons --- */
+  .btn                  { font-size: 15px; padding: 13px 24px; }
+}
+
+
+/* ==========================================
+   6. EXTRA SMALL  ≤ 400px
+========================================== */
+
+@media (max-width: 400px) {
+
+  .hero-title           { font-size: 26px; }
+  .hero-description     { font-size: 13px; }
+  .section-title h2     { font-size: 22px; }
+  .section-heading .section-title { font-size: 22px; }
+  .product-title        { font-size: 24px; }
+  .stat-box h2          { font-size: 24px; }
+  .btn                  { font-size: 14px; padding: 12px 18px; }
+  .footer-logo img      { max-height: 46px; }
+}
+
+
+/* ==========================================
+   7. MOBILE NAV COMPONENT  (navbar.html)
+      — was completely unstyled
+========================================== */
+
+.mobile-nav {
+  position        : fixed;
+  top             : 0;
+  right           : -320px;
+  width           : 300px;
+  max-width       : 85vw;
+  height          : 100vh;
+  background      : #111827;
+  z-index         : 10000;
+  display         : flex;
+  flex-direction  : column;
+  transition      : right .35s ease;
+  overflow-y      : auto;
+  padding-bottom  : 30px;
+}
+
+.mobile-nav.open  { right: 0; }
+
+.mobile-nav-header {
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+  padding         : 20px 22px;
+  border-bottom   : 1px solid rgba(255,255,255,.08);
+}
+
+.mobile-nav-logo  { height: 46px; }
+
+.mobile-nav-close {
+  background      : none;
+  border          : none;
+  color           : #fff;
+  font-size       : 22px;
+  cursor          : pointer;
+  padding         : 4px 8px;
+  border-radius   : 8px;
+  transition      : background .25s;
+}
+.mobile-nav-close:hover { background: rgba(255,255,255,.1); }
+
+.mobile-nav-menu {
+  list-style      : none;
+  padding         : 20px 0;
+  margin          : 0;
+  flex            : 1;
+}
+
+.mobile-nav-menu li a {
+  display         : flex;
+  align-items     : center;
+  gap             : 14px;
+  padding         : 14px 24px;
+  color           : rgba(255,255,255,.8);
+  text-decoration : none;
+  font-weight     : 600;
+  font-size       : 16px;
+  transition      : background .25s, color .25s;
+}
+
+.mobile-nav-menu li a:hover,
+.mobile-nav-menu li a.active {
+  background      : rgba(6,191,191,.12);
+  color           : #06BFBF;
+}
+
+.mobile-nav-menu li a i {
+  width           : 24px;
+  text-align      : center;
+  font-size       : 18px;
+}
+
+.mobile-nav-footer {
+  padding         : 16px 22px 0;
+  border-top      : 1px solid rgba(255,255,255,.08);
+}
+
+.mobile-nav-overlay {
+  position        : fixed;
+  inset           : 0;
+  background      : rgba(0,0,0,.55);
+  z-index         : 9999;
+  opacity         : 0;
+  visibility      : hidden;
+  transition      : opacity .35s, visibility .35s;
 }
+
+.mobile-nav-overlay.open {
+  opacity         : 1;
+  visibility      : visible;
+}
+
 
-.hero p{
+/* ==========================================
+   8. CONTACT COMPONENT — missing classes
+========================================== */
 
-font-size:14px;
-
-}
-
-.btn{
-
-font-size:14px;
-
-padding:12px 18px;
-
-}
-
-.section-title h2{
-
-font-size:24px;
-
-}
-
-}
-
-/* ===========================================
-   Large Laptop (1400px)
-=========================================== */
-
-@media (max-width:1400px){
-
-.hero-title{
-    font-size:60px;
-}
-
-.section-title{
-    font-size:42px;
-}
-
-}
-
-
-/* ===========================================
-   Laptop
-=========================================== */
-
-@media (max-width:1200px){
-
-.hero-title{
-    font-size:52px;
-}
-
-.hero-description{
-    width:70%;
-}
-
-.nav-menu{
-    gap:20px;
-}
-
-.section-title{
-    font-size:38px;
-}
-
-}
-
-
-/* ===========================================
-   Tablet Landscape
-=========================================== */
-
-@media (max-width:992px){
-
-.header{
-    padding:18px 0;
-}
-
-.menu-toggle{
-    display:block;
-}
-
-.navbar{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:320px;
-    height:100vh;
-    background:#ffffff;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:flex-start;
-    padding:90px 30px;
-    transition:.4s;
-    box-shadow:-5px 0 25px rgba(0,0,0,.15);
-}
-
-.navbar.active{
-    right:0;
-}
-
-.nav-menu{
-    flex-direction:column;
-    width:100%;
-    gap:25px;
-}
-
-.nav-btn{
-    margin-top:30px;
-}
-
-.hero{
-    height:90vh;
-}
-
-.hero-content{
-    text-align:center;
-}
-
-.hero-title{
-    font-size:48px;
-}
-
-.hero-description{
-    width:100%;
-    margin:auto;
-}
-
-.hero-buttons{
-    justify-content:center;
-}
-
-.section-title{
-    font-size:36px;
-}
-
-.container{
-    width:92%;
-}
-
-}
-
-
-/* ===========================================
-   Tablet Portrait
-=========================================== */
-
-@media (max-width:768px){
-
-.header{
-    padding:15px 0;
-}
-
-.logo img{
-    height:45px;
-}
-
-.hero{
-    height:85vh;
-}
-
-.hero-title{
-    font-size:40px;
-    line-height:1.2;
-}
-
-.hero-description{
-    font-size:17px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-}
-
-.btn-primary,
-.btn-secondary{
-    width:220px;
-    text-align:center;
-}
-
-.section{
-    padding:80px 0;
-}
-
-.section-title{
-    font-size:32px;
-}
-
-.section-subtitle{
-    font-size:16px;
-}
-
-.footer-top{
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-}
-
-}
-
-
-/* ===========================================
-   Mobile
-=========================================== */
-
-@media (max-width:576px){
-
-.container{
-    width:92%;
-}
-
-.hero{
-    height:100vh;
-    padding-top:100px;
-}
-
-.hero-title{
-    font-size:34px;
-}
-
-.hero-description{
-    font-size:16px;
-    line-height:1.8;
-}
-
-.btn-primary,
-.btn-secondary{
-    width:100%;
-}
-
-.section{
-    padding:70px 0;
-}
-
-.section-title{
-    font-size:28px;
+.contact-form-card {
+  background    : #fff;
+  padding       : 38px 35px;
+  border-radius : 20px;
+  box-shadow    : 0 15px 45px rgba(0,0,0,.08);
 }
 
-.footer-top{
-    grid-template-columns:1fr;
+@media (max-width: 576px) {
+  .contact-form-card { padding: 24px 18px; }
 }
 
-.footer-bottom{
-    flex-direction:column;
-    gap:15px;
-    text-align:center;
+.contact-social-btn {
+  display         : inline-flex;
+  align-items     : center;
+  justify-content : center;
+  width           : 46px;
+  height          : 46px;
+  border-radius   : 50%;
+  background      : #f0f4ff;
+  color           : var(--primary);
+  font-size       : 20px;
+  text-decoration : none;
+  transition      : var(--transition);
 }
 
+.contact-social-btn:hover {
+  background      : var(--gradient-primary);
+  color           : #fff;
+  transform       : translateY(-4px);
 }
 
 
-/* ===========================================
-   Small Mobile
-=========================================== */
+/* ==========================================
+   9.  WHY CTA BOX  (components/why-choose.html)
+========================================== */
 
-@media (max-width:400px){
-
-.hero-title{
-    font-size:28px;
-}
-
-.hero-description{
-    font-size:15px;
-}
-
-.logo img{
-    height:40px;
-}
-
-.menu-toggle{
-    font-size:28px;
-}
-
-.section-title{
-    font-size:24px;
-}
-
-}
-@media(max-width:992px){
-
-.hero-title{
-    font-size:50px;
-}
-
-.hero-stats{
-    gap:30px;
-}
-
-}
-
-@media(max-width:768px){
-
-.hero{
-    text-align:center;
-}
-
-.hero-title{
-    font-size:40px;
-}
-
-.hero-description{
-    font-size:16px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-}
-
-.hero-stats{
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
-}
-
+.why-cta {
+  background    : linear-gradient(135deg, #0d6efd, #00bcd4);
+  border-radius : 22px;
+  padding       : 45px 50px;
+  color         : #fff;
 }
 
-@media(max-width:576px){
-
-.hero-title{
-    font-size:32px;
-}
+.why-cta h3   { font-size: 26px; font-weight: 700; margin-bottom: 10px; color: #fff; }
+.why-cta p    { opacity: .9; margin: 0; line-height: 1.7; }
 
-.hero-description{
-    font-size:15px;
+@media (max-width: 768px) {
+  .why-cta          { padding: 35px 24px; text-align: center; }
+  .why-cta .btn     { width: 100%; margin-top: 20px; }
 }
 
-.stat-box h2{
-    font-size:28px;
+@media (max-width: 576px) {
+  .why-cta h3       { font-size: 22px; }
 }
 
-/* About Section */
 
-@media (max-width:991px){
+/* ==========================================
+   10. HEADING BADGE  — font-size bug fix
+       (was wrongly set to 43px in sections.css)
+========================================== */
 
-.about-content{
-    margin-top:50px;
-    padding-left:0;
+.heading-badge {
+  font-size     : unset;   /* remove the erroneous 43px override */
 }
 
-.about-floating-card{
-    right:20px;
-    bottom:20px;
-    padding:20px;
-}
 
-.about-feature-card{
-    padding:20px;
-}
+/* ==========================================
+   11. ANIMATIONS — Respect prefers-reduced-motion
+========================================== */
 
-.about-counter h2{
-    font-size:36px;
+@media (prefers-reduced-motion: reduce) {
+  *             { animation: none !important; transition: none !important; }
+  .hero-title,
+  .hero-description,
+  .hero-buttons,
+  .hero-stats   { animation: none !important; }
 }
 
-}
 
-@media (max-width:767px){
+/* ==========================================
+   12. IMAGE PERFORMANCE — lazy-load defaults
+========================================== */
 
-.about-floating-card{
-    position:relative;
-    right:0;
-    bottom:0;
-    margin-top:20px;
+img {
+  max-width   : 100%;
+  height      : auto;
 }
 
-.about-feature-card{
-    flex-direction:column;
-    text-align:center;
-}
+/* ==========================================
+   13. OVERFLOW GUARD — prevent horizontal scroll
+========================================== */
 
-.about-feature-card .icon{
-    margin:auto;
+html, body {
+  overflow-x  : hidden;
 }
 
-.about-counter{
-    margin-bottom:20px;
+.spec-table-wrapper,
+.blog-table-wrap {
+  overflow-x  : auto;
+  -webkit-overflow-scrolling : touch;
 }
 
-}
+/* ==========================================
+   14. FOOTER BOTTOM LINKS — color fix
+========================================== */
 
+.footer-bottom a {
+  color        : rgba(255,255,255,.60);
+  text-decoration : none;
+  transition   : color .3s;
 }
+.footer-bottom a:hover { color: var(--primary); }

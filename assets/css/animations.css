@@ -6,9 +6,10 @@
 
 /* ==========================================
    GLOBAL TRANSITIONS
+   (scoped to visual elements only, not form inputs)
 ========================================== */
 
-*{
+*:not(input):not(textarea):not(select):not(option){
 
     transition:
     color .3s ease,

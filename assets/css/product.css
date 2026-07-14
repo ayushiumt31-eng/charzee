@@ -590,7 +590,9 @@ RESPONSIVE
 
     .top-card,
 
-    .bottom-card {
+    .bottom-card,
+
+    .bottom-card-dc {
 
         display: none;
 

@@ -449,6 +449,12 @@
 
 }
 
+.social-toggle-link.linkedin{
+
+    background: #0A66C2;
+
+}
+
 @media (max-width: 767px){
 
     .social-toggle{
@@ -490,5 +496,42 @@
     );
 
     pointer-events: none;
+
+}
+
+
+/* ==========================================
+   FOOTER RESPONSIVE — Extra fixes
+========================================== */
+
+@media (max-width: 768px) {
+
+    .footer-bottom-content {
+        flex-direction : column;
+        text-align     : center;
+        gap            : 12px;
+    }
+
+    .footer-bottom-links {
+        justify-content : center;
+        flex-wrap       : wrap;
+        gap             : 14px;
+    }
+
+    .footer-form {
+        flex-direction : column;
+        gap            : 12px;
+    }
+
+    .footer-form input {
+        border-radius : 50px;
+        height        : 50px;
+    }
+
+    .footer-form button {
+        width         : 100%;
+        border-radius : 50px;
+        height        : 50px;
+    }
 
 }

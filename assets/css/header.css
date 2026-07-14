@@ -372,13 +372,13 @@
 
 .navbar-toggler-icon{
 
-    filter:brightness(10);
+    filter:none;
 
 }
 
-.header.scrolled .navbar-toggler-icon{
+.header.transparent .navbar-toggler-icon{
 
-    filter:none;
+    filter:brightness(10);
 
 }
 

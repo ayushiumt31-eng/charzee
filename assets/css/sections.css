@@ -729,7 +729,7 @@ ABOUT IMAGE
 
     position:absolute;
 
-    right:-20px;
+    right:0;
 
     bottom:30px;
 
@@ -1525,7 +1525,7 @@ BUTTONS
     border-radius: 30px;
     background: #e8f9f6;
     color: var(--primary);
-    font-size: 43px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.25;
 }
