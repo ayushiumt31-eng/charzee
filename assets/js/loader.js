@@ -33,6 +33,8 @@ function loadComponents() {
 
         products: "components/home/products.html",
 
+        serviceAgent: "components/service-agent.html",
+
     };
 
     Object.entries(components).forEach(([id, file]) => {
@@ -48,16 +50,6 @@ function loadComponents() {
                 }
                 return response.text();
             })
-            // .then(html => {
-            //     element.innerHTML = html;
-
-            //     if (id === "header") {
-            //         navbarScroll();
-            //         setActiveNavLink();
-            //     }
-
-            //     removeCurrentPageLinks(element, id);
-            // })
             .then(html => {
                 element.innerHTML = html;
 
@@ -69,6 +61,11 @@ function loadComponents() {
                 // Contact form initialize
                 if (id === "contact" && typeof initContactForm === "function") {
                     initContactForm();
+                }
+
+                // Service Agent initialize
+                if (id === "serviceAgent" && typeof initServiceAgent === "function") {
+                    initServiceAgent();
                 }
 
                 removeCurrentPageLinks(element, id);
