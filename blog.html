@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which EV Charger Is Best for Home in India? | Charzee</title>
-    <meta name="description" content="Find the best EV charger for home in India. Compare 3.3kW, 7.2kW, 11kW and 22kW chargers, charging speed, compatibility and setup requirements.">
-    <meta name="keywords" content="best EV charger for home India, 7.2kW EV charger, home EV charging">
+    <title>Blogs | Charzee EV Solutions</title>
+    <meta name="description" content="Read Charzee's expert blogs on Solar Energy, EV Charging Infrastructure and Battery Energy Storage Systems. Stay informed about clean energy solutions.">
+    <meta name="keywords" content="EV charging blog, solar energy India, BESS battery storage, Charzee blog">
     <meta name="author" content="Charzee">
     <meta name="theme-color" content="#06BFBF">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,75 +13,238 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/favicon.png">
+
+    <style>
+        /* ── Blog Listing Page Styles ── */
+        .blog-listing-hero {
+            background: linear-gradient(135deg, #0d1b2e 0%, #0d3b6e 100%);
+            padding: 160px 0 80px;
+            text-align: center;
+            color: #fff;
+        }
+        .blog-listing-hero .section-badge {
+            background: rgba(6,191,191,.18);
+            color: #06BFBF;
+            border: 1px solid rgba(6,191,191,.3);
+        }
+        .blog-listing-hero h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 18px 0 20px;
+            color: #fff;
+        }
+        .blog-listing-hero p {
+            font-size: 18px;
+            color: rgba(255,255,255,.78);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Blog Cards */
+        .blog-card {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0,0,0,.08);
+            transition: .35s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,.14);
+        }
+        .blog-card-img {
+            position: relative;
+            overflow: hidden;
+            height: 240px;
+        }
+        .blog-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .blog-card:hover .blog-card-img img {
+            transform: scale(1.07);
+        }
+        .blog-card-category {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: var(--gradient-primary);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .blog-card-body {
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card-meta {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 14px;
+        }
+        .blog-card-meta i {
+            color: var(--primary);
+            margin-right: 5px;
+        }
+        .blog-card-body h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1.35;
+            margin-bottom: 14px;
+        }
+        .blog-card-body p {
+            color: #6B7280;
+            line-height: 1.8;
+            font-size: 15px;
+            flex: 1;
+            margin-bottom: 24px;
+        }
+        .blog-read-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 15px;
+            transition: .3s;
+            align-self: flex-start;
+        }
+        .blog-read-btn i {
+            transition: .3s;
+        }
+        .blog-read-btn:hover {
+            color: var(--primary-dark);
+            gap: 12px;
+        }
+
+        /* Section */
+        .blog-listing-section {
+            padding: 90px 0;
+            background: #f8fafc;
+        }
+
+        @media (max-width: 768px) {
+            .blog-listing-hero h1 { font-size: 34px; }
+            .blog-listing-hero { padding: 120px 0 60px; }
+            .blog-listing-section { padding: 60px 0; }
+            .blog-card-img { height: 200px; }
+        }
+        @media (max-width: 576px) {
+            .blog-listing-hero h1 { font-size: 27px; }
+            .blog-card-body { padding: 22px 18px; }
+            .blog-card-body h3 { font-size: 19px; }
+        }
+    </style>
 </head>
 <body>
+
     <div id="header"></div>
-    <section class="hero hero-inner">
-        <div class="container"><div class="row justify-content-center text-center"><div class="col-lg-9">
-            <span class="section-badge">Home EV Charging Guide</span>
-            <h1 class="hero-title mt-4">Which EV Charger Is Best for Home in India?</h1>
-            <p class="hero-description">Everything you need to know about choosing the right home EV charger for your car, driving routine and electrical supply.</p>
-        </div></div></div>
-    </section>
-    <main class="blog-article section">
-        <div class="container"><div class="row justify-content-center"><article class="col-xl-9">
-            <div class="blog-content">
-                <p class="blog-lead"><strong>Quick answer:</strong> For most Indian homes, a 7.2 kW AC EV charger with a Type 2 connector is the best choice. It matches the onboard charging capacity of most mass-market EVs, runs on a standard single-phase household connection, and comfortably tops up a battery overnight. Higher-capacity 11 kW or 22 kW chargers only make sense for premium EVs with three-phase power support.</p>
-                <p>Many new EV owners assume buying a home charger is simple: just pick the fastest one available and you're sorted. It doesn't quite work that way. This guide explains how to choose the right residential EV charging solution for your car, your driving pattern, and your home's electrical supply.</p>
-                <h2>Why Do You Need a Home EV Charger?</h2>
-                <p>The biggest reason is convenience. Plug in overnight and wake up to a full battery, without planning your day around a public charging station. Your car charges while it is parked—usually 8–10 hours every night—so public chargers become a backup for road trips or emergencies rather than something you depend on daily.</p>
-                <p>Most EV owners do not need the fastest charger; they need one that tops up the car overnight within the time available and matches what their vehicle can accept. A car parked for nine hours does not need a charger that fills it in two.</p>
-                <h2>What Types of EV Chargers Are Available for Homes?</h2>
-                <h3>3.3 kW EV Charger</h3>
-                <p>This basic option works well for low daily driving distances. It typically runs from a standard power socket or a minor electrical upgrade and takes about 8–10+ hours for a full charge, depending on battery size. It is a practical choice when daily commutes are short or a home's electrical infrastructure is limited.</p>
-                <h3>7.2 kW EV Charger <span class="text-primary">(Most Recommended)</span></h3>
-                <p>For most Indian EV owners, a 7.2 kW AC EV charger is the practical sweet spot. It runs on the single-phase connection most homes already have and charges roughly twice as fast as a 3.3 kW unit, comfortably topping up a typical EV overnight.</p>
-                <p>Most mass-market EVs in India, including the Tata Nexon EV, MG ZS EV and Mahindra XUV400, have onboard chargers that max out around 7.2 kW. Installing anything faster often does not improve real-world charging because the car itself becomes the bottleneck.</p>
-                <p>If you're deciding between models, it's worth exploring our <a href="components/home/product/ac-ev-chargers.html" class="text-primary fw-semibold">AC EV Charger solutions</a> for residential and workplace charging to see how a 7.2 kW Type 2 EV charger fits your setup.</p>
-                <div class="blog-highlight"><p>Considering a 7.2 kW charger for your home? Share your EV model with our team and we will confirm compatibility before you buy.</p></div>
-                <h3>11 kW and 22 kW EV Chargers</h3>
-                <p>These higher-capacity chargers need a three-phase electrical connection, which is not standard in most Indian homes and may require a dedicated application to the local electricity board. They are worthwhile only when your EV's onboard charger can actually use that power. A 22 kW charger connected to a car with a 7.2 kW onboard charger will still charge at only 7.2 kW.</p>
-                <h2>Which EV Charger Is Best for Home Use?</h2>
-                <p>For most Indian homes, the answer is a <strong>7.2 kW AC EV charger with a Type 2 connector</strong>.</p>
-                <ul class="blog-list"><li>It charges most mainstream EVs to full overnight within a typical 8–10 hour parking window.</li><li>It uses a single-phase connection, avoiding the cost and paperwork of a three-phase upgrade.</li><li>Type 2 is the standard connector across Indian EVs and public charging infrastructure.</li><li>It offers a sensible cost-to-benefit point without paying for capacity your car cannot use.</li></ul>
-                <p>Unless you own a premium EV with a higher-rated onboard charger and already have three-phase power at home, a 7.2 kW unit is very likely the right answer.</p>
-                <h2>AC vs DC Charger for Home Charging</h2>
-                <h3>AC Charger</h3><p>AC charging is the normal home-charging solution. It suits long parking durations—overnight or through a workday—and needs a comparatively modest electrical connection, which makes it the standard residential choice.</p>
-                <h3>DC Fast Charger</h3><p>DC fast chargers are designed for high-turnover commercial locations, fleet operations and highways. They need a much larger power supply, significant installation infrastructure and cost considerably more, which is why a commercial <a href="components/home/product/dc-fast-chargers.html" class="text-primary fw-semibold">DC fast charging solution</a> is designed around high-turnover locations rather than a single home. For residential use, they are almost always unnecessary: your car is parked at home for hours, not minutes.</p>
-                <p>For a closer look at how the two compare on cost, speed, and use case, read our <a href="ac-vs-dc-ev-charger.html" class="text-primary fw-semibold">AC vs DC Charger for Home Charging</a> comparison guide.</p>
-                <h2>How to Choose the Right Home EV Charger?</h2>
-                <h3>1. Your EV Model</h3><p>Every EV has a maximum AC charging capacity in its onboard charger. Check your vehicle specifications before choosing a charger: buying beyond what your car supports adds cost, not speed.</p>
-                <h3>2. Daily Driving Distance</h3><p>For 20–40 km daily, a 3.3 kW or 7.2 kW charger can top up overnight with room to spare. For 80–100 km daily, a 7.2 kW charger is more useful for ensuring a full charge every morning.</p>
-                <h3>3. Available Electrical Connection</h3><p>Most Indian homes have a single-phase connection that supports a 7.2 kW charger. Three-phase power is needed for 11 kW and 22 kW units. Whichever charger you choose, use a dedicated circuit with proper protection—not one shared with other heavy appliances.</p>
-                <h3>4. Parking Location</h3><p>Independent houses offer the most flexibility for wiring and placement. Apartment societies and builder floors may need coordination for a dedicated connection or a smart charger with access control. Villas generally have installation flexibility similar to independent houses.</p>
-                <h2>Best Home EV Charger for Different Situations</h2>
-                <div class="blog-table-wrap"><table class="blog-table"><thead><tr><th>Situation</th><th>Recommended Charger</th></tr></thead><tbody><tr><td>Small daily commute</td><td>3.3 kW charger</td></tr><tr><td>Regular EV usage</td><td>7.2 kW AC charger</td></tr><tr><td>Premium EV with higher AC support</td><td>11 kW / 22 kW charger</td></tr><tr><td>Apartment shared parking</td><td>Smart AC charger</td></tr></tbody></table></div>
-                <h2>Smart Features to Look For in a Home EV Charger</h2>
-                <p>A smart home charger gives you visibility and control over how and when your car charges. Look for:</p>
-                <ul class="blog-list"><li>Type 2 connector—the standard across Indian EVs and public infrastructure.</li><li>RFID access—useful in shared or society parking.</li><li>Mobile app control to start, stop and monitor charging remotely.</li><li>Scheduling for specific hours and off-peak electricity rates.</li><li>Energy monitoring to track consumption and cost.</li><li>Load management to prevent overloading your home's electrical capacity.</li><li>Safety protection against overcurrent, overheating and short circuits.</li></ul>
-                <h2>Common Mistakes While Buying a Home EV Charger</h2>
-                <ul class="blog-list"><li>Buying a higher-kW charger without checking what the vehicle supports.</li><li>Ignoring electrical-load requirements and installing on unsuitable wiring.</li><li>Choosing an unreliable supplier with weak after-sales support or poor safety standards.</li><li>Not considering future EV upgrades.</li><li>Installing without dedicated circuits, earthing and overcurrent protection.</li></ul>
-                <h2>Can Solar Panels Work With a Home EV Charger?</h2><p>Yes. Pairing solar panels with a home EV charger lets you charge directly from solar generation during the day rather than relying entirely on the grid. It works especially well when your car is parked at home during working hours. Beyond the savings, this reduces dependence on grid electricity and can bring running costs close to the cost of solar generation itself.</p>
-                <h2>Final Recommendation</h2>
-                <ul class="blog-list"><li><strong>7.2 kW AC Type 2 charger:</strong> the best overall choice for most homes and mainstream EVs.</li><li><strong>3.3 kW charger:</strong> sufficient for minimal daily driving when speed is not a priority.</li><li><strong>11 kW / 22 kW chargers:</strong> suitable only for premium EVs that support higher AC input and homes with three-phase power.</li><li><strong>DC fast chargers:</strong> for commercial and public charging—not home use.</li></ul>
-                <p>The right charger is not the most powerful one; it is the one that matches your car, electrical setup and driving pattern. For most homes, a 7.2 kW AC EV charger with a Type 2 connector remains the safest starting point.</p>
-                <div class="blog-cta"><h3>Need help choosing your charger?</h3><p>Share your EV model and home charging requirement with Charzee. Our team will help you select a compatible, safe charging solution.</p><a href="contact.html" class="btn btn-primary">Talk to an EV Expert <i class="bi bi-arrow-right ms-2"></i></a></div>
-                <h2>Frequently Asked Questions</h2>
-                <div class="accordion blog-faq" id="blogFaq">
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Which EV charger is best for home use in India?</button></h3><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#blogFaq"><div class="accordion-body">For most Indian homes, a 7.2 kW AC EV charger with a Type 2 connector is the best fit. It matches most mainstream EVs and runs on a standard single-phase connection.</div></div></div>
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Is a 7.2 kW charger enough for home?</button></h3><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#blogFaq"><div class="accordion-body">Yes, for the vast majority of EVs in India. It can fully charge a typical battery within an 8–10 hour overnight window.</div></div></div>
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Can I install a <a href="components/home/product/dc-fast-chargers.html" class="text-primary fw-semibold">DC fast charger</a> at home?</button></h3><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#blogFaq"><div class="accordion-body">It is technically possible but rarely practical. DC fast chargers require a much larger power supply and infrastructure and are intended for commercial or public locations.</div></div></div>
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Which charger is suitable for Tata Nexon EV?</button></h3><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#blogFaq"><div class="accordion-body">The Tata Nexon EV, MG ZS EV and Mahindra XUV400 are well suited to a 7.2 kW AC EV charger with a Type 2 connector.</div></div></div>
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Can solar panels power a home EV charger?</button></h3><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#blogFaq"><div class="accordion-body">Yes. Solar panels can charge an EV directly during daylight hours, reducing dependence on grid electricity and lowering charging costs.</div></div></div>
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Do I need three-phase power for a home EV charger?</button></h3><div id="faq6" class="accordion-collapse collapse" data-bs-parent="#blogFaq"><div class="accordion-body">Not for a 7.2 kW charger, which uses single-phase power. Three-phase power is required only for 11 kW or 22 kW chargers.</div></div></div>
-                    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">Is a smart EV charger worth it for home use?</button></h3><div id="faq7" class="accordion-collapse collapse" data-bs-parent="#blogFaq"><div class="accordion-body">Scheduling and energy monitoring are useful for most homes. RFID access is particularly helpful in apartment or society parking where a charger may be shared.</div></div></div>
+
+    <!-- Hero -->
+    <section class="blog-listing-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="section-badge">Knowledge Hub</span>
+                    <h1>Insights on Clean Energy &amp; EV Charging</h1>
+                    <p>Expert articles on Solar Energy, EV Charging Infrastructure and Battery Storage — written to help you make informed decisions.</p>
                 </div>
             </div>
-        </article></div></div>
-    </main>
+        </div>
+    </section>
+
+    <!-- Blog Listing -->
+    <section class="blog-listing-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Card 1 — Solar -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/images/products/solar-panels.webp" alt="Solar Energy Blog">
+                            <span class="blog-card-category">Solar Energy</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="bi bi-calendar3"></i>June 2025</span>
+                                <span><i class="bi bi-clock"></i>6 min read</span>
+                            </div>
+                            <h3>How Solar Energy Is Changing the Way India Powers Itself</h3>
+                            <p>From rooftop installations to large-scale solar farms, discover how solar power is reducing costs, cutting emissions and building energy independence across India.</p>
+                            <a href="blog-solar.html" class="blog-read-btn">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 — EV Charger -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/images/products/ac-charger-banner.webp" alt="EV Charger Blog">
+                            <span class="blog-card-category">EV Charging</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="bi bi-calendar3"></i>June 2025</span>
+                                <span><i class="bi bi-clock"></i>7 min read</span>
+                            </div>
+                            <h3>AC vs DC EV Chargers — Which One Do You Actually Need?</h3>
+                            <p>Not all EV chargers work the same way. This guide breaks down how AC and DC chargers differ in speed, cost, use case and installation — so you can choose correctly.</p>
+                            <a href="blog-ev-charger.html" class="blog-read-btn">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 — BESS -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/images/brands/BESS.jpg" alt="BESS Blog">
+                            <span class="blog-card-category">Battery Storage</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="bi bi-calendar3"></i>June 2025</span>
+                                <span><i class="bi bi-clock"></i>6 min read</span>
+                            </div>
+                            <h3>What Is BESS and Why Does It Matter for India's Energy Future?</h3>
+                            <p>Battery Energy Storage Systems are becoming a critical part of reliable power supply. Learn how BESS works, where it is used and why it is growing fast in India.</p>
+                            <a href="blog-bess.html" class="blog-read-btn">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <div id="footer"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="assets/js/loader.js"></script><script src="assets/js/navbar.js"></script><script src="assets/js/animation.js"></script><script src="assets/js/backtotop.js"></script><script src="assets/js/smoothscroll.js"></script><script src="assets/js/main.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

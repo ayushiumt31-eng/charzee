@@ -1529,3 +1529,114 @@ BUTTONS
     font-weight: 700;
     line-height: 1.25;
 }
+
+
+/* ==========================================
+   HOME BLOG CARDS
+========================================== */
+
+.home-blog-card {
+    background    : #fff;
+    border-radius : 22px;
+    overflow      : hidden;
+    box-shadow    : 0 10px 35px rgba(0,0,0,.08);
+    transition    : var(--transition);
+    height        : 100%;
+    display       : flex;
+    flex-direction: column;
+}
+
+.home-blog-card:hover {
+    transform  : translateY(-10px);
+    box-shadow : 0 25px 60px rgba(0,0,0,.13);
+}
+
+.home-blog-img {
+    position   : relative;
+    overflow   : hidden;
+    height     : 220px;
+    flex-shrink: 0;
+}
+
+.home-blog-img img {
+    width      : 100%;
+    height     : 100%;
+    object-fit : cover;
+    transition : .5s;
+}
+
+.home-blog-card:hover .home-blog-img img {
+    transform  : scale(1.07);
+}
+
+.home-blog-cat {
+    position      : absolute;
+    top           : 15px;
+    left          : 15px;
+    background    : var(--gradient-primary);
+    color         : #fff;
+    padding       : 5px 15px;
+    border-radius : 30px;
+    font-size     : 12px;
+    font-weight   : 600;
+}
+
+.home-blog-body {
+    padding       : 26px;
+    flex          : 1;
+    display       : flex;
+    flex-direction: column;
+}
+
+.home-blog-meta {
+    display        : flex;
+    align-items    : center;
+    gap            : 16px;
+    font-size      : 13px;
+    color          : #9CA3AF;
+    margin-bottom  : 12px;
+}
+
+.home-blog-meta i {
+    color        : var(--primary);
+    margin-right : 4px;
+}
+
+.home-blog-body h3 {
+    font-size    : 18px;
+    font-weight  : 700;
+    color        : var(--dark);
+    line-height  : 1.4;
+    margin-bottom: 12px;
+}
+
+.home-blog-body p {
+    color        : var(--gray);
+    font-size    : 14px;
+    line-height  : 1.8;
+    flex         : 1;
+    margin-bottom: 20px;
+}
+
+.home-blog-link {
+    display         : inline-flex;
+    align-items     : center;
+    gap             : 7px;
+    color           : var(--primary);
+    font-weight     : 600;
+    font-size       : 14px;
+    text-decoration : none;
+    transition      : gap .25s, color .25s;
+    align-self      : flex-start;
+}
+
+.home-blog-link:hover {
+    gap   : 12px;
+    color : var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .home-blog-img  { height: 195px; }
+    .home-blog-body { padding: 20px 18px; }
+    .home-blog-body h3 { font-size: 17px; }
+}
