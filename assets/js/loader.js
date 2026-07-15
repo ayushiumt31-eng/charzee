@@ -10,22 +10,27 @@ function loadComponents() {
 
         hero: "components/hero.html",
 
+        divider1: "components/divider-line.html",
+
         trusted: "components/trusted.html",
 
-        about: "components/abouts.html",
-
+        divider2: "components/divider-line.html",
 
         services: "components/services.html",
 
+        divider3: "components/divider-line.html",
+
         projects: "components/projects.html",
 
-        portfolio: "components/portfolio.html",
+        divider4: "components/divider-line.html",
 
         testimonials: "components/testimonials.html",
 
+        divider5: "components/divider-line.html",
+
         whyChoose: "components/why-choose.html",
 
-        cta: "components/cta.html",
+        divider6: "components/divider-line.html",
 
         footer: "components/footer.html",
 
