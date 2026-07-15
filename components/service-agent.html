@@ -85,7 +85,7 @@
     width           : 58px;
     height          : 58px;
     border-radius   : 50%;
-    background      : var(--gradient-primary);
+    background      : linear-gradient(135deg, #06BFBF 0%, #06BFBF 100%);
     color           : #fff;
     border          : none;
     font-size       : 22px;
@@ -94,8 +94,8 @@
     align-items     : center;
     justify-content : center;
     box-shadow      : 0 8px 24px rgba(6,191,191,.35);
-    transition      : .3s;
-    z-index         : 998;
+    transition      : all .3s ease;
+    z-index         : 9998;
 }
 
 .service-agent-btn:hover {
@@ -107,8 +107,8 @@
     position        : absolute;
     top             : -2px;
     right           : -2px;
-    width           : 22px;
-    height          : 22px;
+    width           : 24px;
+    height          : 24px;
     background      : #ff4757;
     color           : #fff;
     border-radius   : 50%;
@@ -117,6 +117,7 @@
     justify-content : center;
     font-size       : 12px;
     font-weight     : 700;
+    border          : 2px solid #fff;
 }
 
 .service-agent-window {
@@ -124,18 +125,18 @@
     bottom          : 100px;
     right           : 20px;
     width           : 380px;
-    max-width       : 90vw;
-    height          : 560px;
+    height          : 480px;
     background      : #fff;
-    border-radius   : 16px;
-    box-shadow      : 0 25px 60px rgba(0,0,0,.18);
+    border-radius   : 20px;
+    box-shadow      : 0 20px 60px rgba(0,0,0,.25);
     display         : flex;
     flex-direction  : column;
-    z-index         : 999;
+    z-index         : 9999;
     opacity         : 0;
     visibility      : hidden;
-    transform       : scale(.95) translateY(20px);
-    transition      : opacity .3s, visibility .3s, transform .3s;
+    transform       : scale(.8) translateY(30px);
+    transition      : all .35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow        : hidden;
 }
 
 .service-agent-window.open {
@@ -145,26 +146,32 @@
 }
 
 .service-agent-header {
-    background      : var(--gradient-primary);
+    background      : linear-gradient(135deg, #06BFBF 0%, #009999 100%);
     color           : #fff;
-    padding         : 20px;
-    border-radius   : 16px 16px 0 0;
+    padding         : 16px 16px;
     display         : flex;
     align-items     : flex-start;
     justify-content : space-between;
-    gap             : 12px;
+    gap             : 10px;
+    flex-shrink     : 0;
+}
+
+.service-agent-header-content {
+    flex            : 1;
 }
 
 .service-agent-header h4 {
-    font-size       : 16px;
+    font-size       : 15px;
     font-weight     : 700;
-    margin          : 0 0 4px;
+    margin          : 0 0 2px 0;
+    color           : #fff;
 }
 
 .service-agent-header p {
-    font-size       : 12px;
-    opacity         : .9;
+    font-size       : 11px;
+    opacity         : 0.95;
     margin          : 0;
+    color           : rgba(255,255,255,.9);
 }
 
 .service-agent-close {
@@ -172,39 +179,44 @@
     border          : none;
     color           : #fff;
     font-size       : 18px;
-    width           : 32px;
-    height          : 32px;
+    width           : 36px;
+    height          : 36px;
     border-radius   : 50%;
     cursor          : pointer;
     display         : flex;
     align-items     : center;
     justify-content : center;
-    transition      : background .25s;
+    transition      : all .25s ease;
     flex-shrink     : 0;
+    padding         : 0;
 }
 
 .service-agent-close:hover {
     background      : rgba(255,255,255,.3);
+    transform       : rotate(90deg);
 }
 
 .service-agent-messages {
     flex            : 1;
     overflow-y      : auto;
-    padding         : 18px;
+    overflow-x      : hidden;
+    padding         : 14px;
     display         : flex;
     flex-direction  : column;
-    gap             : 12px;
+    gap             : 10px;
+    background      : #fafafa;
 }
 
 .service-agent-message {
     display         : flex;
     animation       : messageSlideIn .3s ease;
+    word-wrap       : break-word;
 }
 
 @keyframes messageSlideIn {
     from {
         opacity     : 0;
-        transform   : translateY(10px);
+        transform   : translateY(15px);
     }
     to {
         opacity     : 1;
@@ -221,53 +233,76 @@
 }
 
 .message-content {
-    max-width       : 75%;
-    padding         : 12px 16px;
+    max-width       : 80%;
+    padding         : 10px 13px;
     border-radius   : 12px;
-    font-size       : 14px;
-    line-height     : 1.5;
+    font-size       : 13px;
+    line-height     : 1.4;
+    word-wrap       : break-word;
+    overflow-wrap   : break-word;
 }
 
 .bot-message .message-content {
-    background      : #f0f0f0;
-    color           : #333;
+    background      : #e8f4f8;
+    color           : #111827;
+    border-radius   : 14px 14px 14px 4px;
 }
 
 .user-message .message-content {
-    background      : var(--gradient-primary);
+    background      : linear-gradient(135deg, #06BFBF 0%, #009999 100%);
     color           : #fff;
+    border-radius   : 14px 14px 4px 14px;
+}
+
+.message-content ul {
+    margin          : 6px 0 0 0;
+    padding-left    : 16px;
+    font-size       : 12px;
+}
+
+.message-content ul li {
+    margin          : 2px 0;
 }
 
 .service-agent-input {
-    padding         : 14px;
-    border-top      : 1px solid #eee;
+    padding         : 12px;
+    border-top      : 1px solid #e5e7eb;
+    background      : #fff;
     flex-shrink     : 0;
 }
 
 #serviceAgentForm {
     display         : flex;
     gap             : 8px;
+    width           : 100%;
 }
 
 #serviceAgentInput {
     flex            : 1;
-    padding         : 10px 14px;
-    border          : 1px solid #ddd;
+    padding         : 11px 14px;
+    border          : 1.5px solid #ddd;
     border-radius   : 24px;
     font-size       : 14px;
+    font-family     : inherit;
     outline         : none;
-    transition      : border-color .25s;
+    transition      : border-color .25s ease;
+    background      : #fff;
+}
+
+#serviceAgentInput::placeholder {
+    color           : #999;
 }
 
 #serviceAgentInput:focus {
-    border-color    : var(--primary);
+    border-color    : #06BFBF;
+    box-shadow      : 0 0 0 3px rgba(6,191,191,.1);
 }
 
 #serviceAgentForm button {
-    width           : 36px;
-    height          : 36px;
+    width           : 38px;
+    height          : 38px;
     border-radius   : 50%;
-    background      : var(--gradient-primary);
+    background      : linear-gradient(135deg, #06BFBF 0%, #009999 100%);
     color           : #fff;
     border          : none;
     cursor          : pointer;
@@ -275,11 +310,14 @@
     align-items     : center;
     justify-content : center;
     font-size       : 16px;
-    transition      : transform .2s;
+    transition      : all .2s ease;
+    padding         : 0;
+    flex-shrink     : 0;
 }
 
 #serviceAgentForm button:hover {
-    transform       : scale(1.05);
+    transform       : scale(1.08);
+    box-shadow      : 0 4px 12px rgba(6,191,191,.3);
 }
 
 #serviceAgentForm button:active {
@@ -287,20 +325,38 @@
 }
 
 .service-agent-footer {
-    padding         : 12px 14px;
-    border-top      : 1px solid #eee;
+    padding         : 10px 12px;
+    border-top      : 1px solid #e5e7eb;
     text-align      : center;
+    background      : #f9f9f9;
     flex-shrink     : 0;
+}
+
+.service-agent-footer p {
+    font-size       : 11px;
+    color           : rgba(0,0,0,.5);
+    margin          : 0;
+}
+
+.service-agent-footer a {
+    color           : #06BFBF;
+    text-decoration : none;
+    font-weight     : 600;
+    transition      : color .2s;
+}
+
+.service-agent-footer a:hover {
+    color           : #009999;
 }
 
 .service-agent-overlay {
     position        : fixed;
     inset           : 0;
-    background      : rgba(0,0,0,.4);
-    z-index         : 997;
+    background      : rgba(0,0,0,.3);
+    z-index         : 9997;
     opacity         : 0;
     visibility      : hidden;
-    transition      : opacity .3s, visibility .3s;
+    transition      : all .3s ease;
 }
 
 .service-agent-overlay.open {
@@ -308,43 +364,89 @@
     visibility      : visible;
 }
 
-/* Scrollbar */
+/* Scrollbar Styling */
 .service-agent-messages::-webkit-scrollbar {
     width           : 6px;
 }
 
 .service-agent-messages::-webkit-scrollbar-track {
-    background      : #f1f1f1;
-    border-radius   : 10px;
+    background      : transparent;
 }
 
 .service-agent-messages::-webkit-scrollbar-thumb {
-    background      : var(--primary);
-    border-radius   : 10px;
+    background      : #ddd;
+    border-radius   : 3px;
 }
 
 .service-agent-messages::-webkit-scrollbar-thumb:hover {
-    background      : var(--primary-dark);
+    background      : #06BFBF;
 }
 
-/* Mobile */
-@media (max-width: 576px) {
+/* Mobile Responsive */
+@media (max-width: 640px) {
     .service-agent-btn {
-        bottom          : 18px;
-        right           : 18px;
-        width           : 52px;
-        height          : 52px;
+        bottom          : 20px;
+        right           : 20px;
+        width           : 54px;
+        height          : 54px;
         font-size       : 20px;
     }
+
     .service-agent-window {
         bottom          : 80px;
         right           : 12px;
         left            : 12px;
         width           : auto;
-        height          : 480px;
+        height          : 420px;
+        max-width       : calc(100vw - 24px);
     }
+
     .message-content {
-        max-width       : 85%;
+        max-width       : 90%;
+        font-size       : 12px;
+    }
+
+    .service-agent-header {
+        padding         : 14px 14px;
+    }
+
+    .service-agent-header h4 {
+        font-size       : 14px;
+    }
+
+    .service-agent-header p {
+        font-size       : 10px;
+    }
+
+    #serviceAgentInput {
+        padding         : 8px 12px;
+        font-size       : 13px;
+    }
+
+    #serviceAgentForm button {
+        width           : 34px;
+        height          : 34px;
+        font-size       : 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-agent-window {
+        height          : 400px;
+        border-radius   : 14px;
+    }
+
+    .service-agent-messages {
+        padding         : 12px;
+        gap             : 8px;
+    }
+
+    .service-agent-input {
+        padding         : 10px;
+    }
+
+    #serviceAgentForm {
+        gap             : 5px;
     }
 }
 </style>
