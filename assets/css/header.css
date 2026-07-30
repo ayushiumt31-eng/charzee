@@ -47,7 +47,7 @@
 
 .custom-navbar{
 
-    padding:14px 0;
+    /* padding:14px 0; */
 
     transition:.35s;
 
@@ -74,7 +74,7 @@
 
 .navbar-brand img{
 
-    height:54px;
+    height:70px;
 
     transition:.35s;
 
